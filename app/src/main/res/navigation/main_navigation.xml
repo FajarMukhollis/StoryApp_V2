@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    android:label="@string/app_name"
+    app:startDestination="@id/mainFragment">
+
+    <activity
+        android:id="@+id/createStoryActivity"
+        android:name="com.fajar.sub2storyapp.view.home.story.CreateStoryActivity"
+        android:label="activity_create_story"
+        tools:layout="@layout/activity_create_story" />
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.fajar.sub2storyapp.view.home.detail.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail">
+        <argument
+            android:name="extra_story"
+            app:argType="com.fajar.sub2storyapp.data.remote.response.ListStoryItem" />
+    </activity>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.fajar.sub2storyapp.view.home.main.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_createStoryActivity"
+            app:destination="@id/createStoryActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailActivity"
+            app:destination="@id/detailActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_mapsActivity2"
+            app:destination="@id/mapsActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.fajar.sub2storyapp.view.home.maps.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
+</navigation>

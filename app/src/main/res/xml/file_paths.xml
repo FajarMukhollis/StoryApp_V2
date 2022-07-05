@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!--Path yang digunakan pada meta-data untuk menyediakan jalur untuk FileProvider-->
+<paths>
+    <external-files-path
+        name="my_images"
+        path="Pictures" />
+</paths>
