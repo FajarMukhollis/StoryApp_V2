@@ -1,6 +1,6 @@
 # StoryApp_V2
 
-### Mempertahankan Fitur dari Submission Sebelumnya (StoryApp_V1)
+### Mempertahankan Fitur Sebelumnya (StoryApp_V1)
 * Pastikan berbagai fitur yang ada dalam submission sebelumnya berjalan dengan baik.
 
 ### Menampilkan Maps
